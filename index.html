@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>"Project: Recipe book"</title>
+        <title>Spin-off of "Project: Recipe book"</title>
         <meta charset="utf-8">
         <style>
         body{
-            background-image:url(https://upload.wikimedia.org/wikipedia/commons/3/39/Parku_Arkeologjik_i_Apollonis%C3%AB_04.jpg);
+            background-image: linear-gradient(to bottom right, rgb(156, 255, 36), rgb(102, 93, 11));
             
         }
         .center {
@@ -17,12 +18,24 @@
 .white{
     color: rgb(255, 255, 255);
 }
+#book{
+    background-color:rgb(224, 198, 137);
+    border-radius:50px;
+    padding: 20px;
+}
+.recipe{
+   background-image: linear-gradient(to bottom right, rgb(172, 92, 237), rgb(59, 173, 150));
+    border-radius:50px;
+    
+    
+    
+}
         
         </style>
     </head>
     <body>
        
-        <h1 align="center">Asjad's Recipe Book</h1>
+        <h1 align="center" id="book">Asjad's Recipe Book</h1>
         
         <h2>Contents:</h2>
         
@@ -32,7 +45,7 @@
             <li><a href="#oats">Oats Porridge</a></li>
         </ol>
         
-        <h2 id="paratha" align="center">Classic Aloo Paratha</h2>
+        <h2 id="paratha" align="center" class="recipe">Classic Aloo Paratha</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Aloo_Paratha1.jpg" alt="aloo paratha" class="center">
         
         <ul>
@@ -72,17 +85,17 @@
          <strong>Step 6:</strong>Roll the paratha into a round about 7 to 8 inches in diameter, or about the size of a normal roti or chapati.<br>
 </p>
 <b class="white">--------------------------------------------------------------------------------------</b>
-     <h2 id="tikka" align="center">Paneer Tikka</h2> 
+     <h2 id="tikka" align="center" class="recipe">Paneer Tikka</h2> 
      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Paneer_Tikka_Masala.jpg" alt="paneer tikka" class="center">
      
      
      
-     <ul class="white">
+     <ul>
             <li><b>Time:</b> 2 hrs.</li>
             <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
         </ul>
         
-        <table class="white">
+        <table>
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -104,7 +117,7 @@
             <tbody>
             </tbody>
         </table>
-        <h4 class="white">Prep Work:</h4>
+        <h4>Prep Work:</h4>
         <p class="white">
             Peel, rinse and dice 1 medium-sized onion in square shaped 1 to 1.5 inches pieces. Rinse and slice 1 small to medium sized capsicum (green bell pepper) in 1 to 1.5 inches pieces.You will need ½ cup each of onions and capsicum. Set these aside. You can also use tomatoes if you want.Crush 1.5 inches ginger and 6 to 7 small to medium sized garlic to a fine paste in a mortar-pestle.
 
@@ -145,7 +158,7 @@ You can reduce or increase the time as required. Total grilling time will be 15 
 <b class="white">--------------------------------------------------------------------------------------</b>
      
      
-     <h2 id="oats" align="center" class="white">Oats Porridge</h2>
+     <h2 id="oats" align="center" class="recipe">Oats Porridge</h2>
      
      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Oatmeal_porridge_1-minute_with_additional_ingredients.jpg" alt="oats porridge" class="center">
      
