@@ -1,58 +1,69 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Spin-off of "Project: Recipe book"</title>
-        <meta charset="utf-8">
-        <style>
-        body{
-            background-image: linear-gradient(to bottom right, rgb(156, 255, 36), rgb(102, 93, 11));
-            
+
+<head>
+    <title>Spin-off of "Project: Recipe book"</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-image:url("https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg?w=996&t=st=1682332447~exp=1682333047~hmac=f0d859d2b89d939b8c7316ae7827fdd589f4315fad56aea6b6d4b804df4c532c");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
         }
+
         .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.white{
-    color: rgb(255, 255, 255);
-}
-#book{
-    background-color:rgb(224, 198, 137);
-    border-radius:50px;
-    padding: 20px;
-}
-.recipe{
-   background-image: linear-gradient(to bottom right, rgb(172, 92, 237), rgb(59, 173, 150));
-    border-radius:50px;
-    
-    
-    
-}
-        
-        </style>
-    </head>
-    <body>
-       
-        <h1 align="center" id="book">Asjad's Recipe Book</h1>
-        
-        <h2>Contents:</h2>
-        
-        <ol>
-            <li><a href="#paratha">Classic Aloo Paratha</a></li>
-            <li><a href="#tikka">Paneer Tikka</a></li>
-            <li><a href="#oats">Oats Porridge</a></li>
-        </ol>
-        
-        <h2 id="paratha" align="center" class="recipe">Classic Aloo Paratha</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Aloo_Paratha1.jpg" alt="aloo paratha" class="center">
-        
+            width: 250px;
+            float:left;
+            margin-left:px;
+            margin-right:18px;
+            margin-bottom:15px;
+
+        }
+
+        .white {
+            color: rgb(255, 255, 255);
+        }
+
+        #book {
+            background-color: rgb(224, 198, 137);
+            border-radius: 50px;
+            padding: 20px;
+        }
+
+        .recipe {
+            background-image: linear-gradient(to bottom right, rgb(172, 92, 237), rgb(59, 173, 150));
+            border-radius: 50px;
+        }
+        .time-and-ingredients{
+            float:none;
+        }
+        .steps{
+            float:;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center" id="book">Asjad's Recipe Book</h1>
+
+    <h2>Contents:</h2>
+
+    <ol>
+        <li><a href="#paratha">Classic Aloo Paratha</a></li>
+        <li><a href="#tikka">Paneer Tikka</a></li>
+        <li><a href="#oats">Oats Porridge</a></li>
+    </ol>
+
+    <h2 id="paratha" align="center" class="recipe">Classic Aloo Paratha</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Aloo_Paratha1.jpg" alt="aloo paratha" class="center">
+    <div class="time-and-ingredients">
         <ul>
             <li><b>Time:</b> 50 min.</li>
             <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
         </ul>
-        
+
         <table>
             <thead>
                 <tr>
@@ -75,26 +86,27 @@
             <tbody>
             </tbody>
         </table>
-        
-        <p><strong>Step 1:</strong> Pinch two small balls from the dough. Flatten them and dust with whole wheat flour.<br>
+    </div>
+
+    <p class="steps"><strong>Step 1:</strong> Pinch two small balls from the dough. Flatten them and dust with whole wheat flour.<br>
         <strong>Step 2:</strong>With a rolling pin, roll them into rounds roughly 4 to 5 inches in diameter. Try making both the discs the same size.<br>
         <strong>Step 3:</strong>On one of the discs, place the potato stuffing in the center, keeping about 1 inch empty space from the sides.<br>
         <strong>Step 4:</strong>Gently place the second circle on top.<br>
         <strong>Step 5:</strong>Press and seal the edges with your fingertips. If you are not able to seal the edges, then brush or spread some water on the edges and then seal.<br>
         <strong>Step 6:</strong>Dust some flour on the stuffed aloo ka paratha and start rolling.<br>
-         <strong>Step 6:</strong>Roll the paratha into a round about 7 to 8 inches in diameter, or about the size of a normal roti or chapati.<br>
-</p>
-<b class="white">--------------------------------------------------------------------------------------</b>
-     <h2 id="tikka" align="center" class="recipe">Paneer Tikka</h2> 
-     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Paneer_Tikka_Masala.jpg" alt="paneer tikka" class="center">
-     
-     
-     
-     <ul>
+        <strong>Step 6:</strong>Roll the paratha into a round about 7 to 8 inches in diameter, or about the size of a normal roti or chapati.<br>
+    </p>
+    <b class="white">--------------------------------------------------------------------------------------</b>
+    <h2 id="tikka" align="center" class="recipe">Paneer Tikka</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Paneer_Tikka_Masala.jpg" alt="paneer tikka" class="center">
+
+
+    <div class="time-and-ingredients">
+        <ul>
             <li><b>Time:</b> 2 hrs.</li>
             <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
         </ul>
-        
+
         <table>
             <thead>
                 <tr>
@@ -117,57 +129,35 @@
             <tbody>
             </tbody>
         </table>
-        <h4>Prep Work:</h4>
-        <p class="white">
-            Peel, rinse and dice 1 medium-sized onion in square shaped 1 to 1.5 inches pieces. Rinse and slice 1 small to medium sized capsicum (green bell pepper) in 1 to 1.5 inches pieces.You will need ½ cup each of onions and capsicum. Set these aside. You can also use tomatoes if you want.Crush 1.5 inches ginger and 6 to 7 small to medium sized garlic to a fine paste in a mortar-pestle.
-
-You will need 1 tablespoon of crushed ginger-garlic or 1 tablespoon of ready ginger-garlic paste.Slice 200 to 250 grams block or paneer into cubes or squares and keep aside. Best is to use homemade paneer.<br>
-</p>
-<p class="white"><strong>Make Tikka Marinade:</strong><br>
-Put 200 grams hung curd (greek yogurt) in a bowl. With a whisk beat the curd lightly till smooth.<br>
-Now add 1 tablespoons ginger garlic paste or 1 tablespoon crushed ginger garlic to the curd. Also add all the dry spice powders. Below you see the following Indian spice powders in clockwise order:<br>
-2 teaspoons kashmiri red chili powder<br>
-1 teaspoon coriander powder<br>
-½ teaspoon turmeric powder<br>
-½ teaspoon garam masala powder<br>
-1 teaspoon cumin powder<br>
-1 teaspoon dry mango powder (amchur)<br>
-1 teaspoon ajwain (carom seeds)<br>
-1 teaspoon chaat masala<br>
-½ teaspoon black pepper powder (optional)<br>
-Kashmiri red chili powder gives a nice red color to the food but is not spicy and hot.<br>
-
-Instead of kashmiri red chilli powder, you can add 2 teaspoons of sweet paprika or ½ to 1 teaspoon of cayenne pepper.<br>
-Add ½ teaspoon black salt and regular salt as per taste. If you do not have black salt, then skip it.<br>
-Add ½ tablespoon (1.5 teaspoons) lemon juice.<br>
-Next add 1 tablespoon mustard oil. If you do not have mustard oil, then use a neutral tasting oil.<br>
-Mix very well. Check the taste and add more seasonings if required.<br>
-Add the onions, capsicum and paneer to the marinade.<BR>
- Slowly and gently mix them with the marinade. Cover and keep the marinated paneer and veggies in the refrigerator for 2 hours or more.<br>
-</p>
-      <p class="white"><strong>Step 1:</strong>  Begin to thread the veggies and paneer alternately on bamboo skewers. Before you begin to thread preheat oven at 230 or 240 degrees Celsius or 464 degree Fahrenheit for 15 to 20 minutes.Use only the top heating element while preheating as well as grilling. Soak or rinse the bamboo skewers before threading.<br>
+    </div>
+    <h4>Prep Work:</h4>
+    <p class="white">
+        Peel, rinse and dice 1 medium-sized onion in square shaped 1 to 1.5 inches pieces. Rinse and slice 1 small to medium sized capsicum (green bell pepper) in 1 to 1.5 inches pieces.You will need ½ cup each of onions and capsicum. Set these aside. You can also use tomatoes if you want.Crush 1.5 inches ginger and 6 to 7 small to medium sized garlic to a fine paste in a mortar-pestle. You will need 1 tablespoon of crushed ginger-garlic or 1 tablespoon of ready ginger-garlic paste.Slice 200 to 250 grams block or paneer into cubes or squares and keep aside. Best is to use homemade paneer.<br>
+    </p>
+    <p class="white"><strong>Make Tikka Marinade:</strong><br> Put 200 grams hung curd (greek yogurt) in a bowl. With a whisk beat the curd lightly till smooth.<br> Now add 1 tablespoons ginger garlic paste or 1 tablespoon crushed ginger garlic to the curd. Also add all the dry spice powders. Below you see the following Indian spice powders in clockwise order:<br> 2 teaspoons kashmiri red chili powder<br> 1 teaspoon coriander powder<br> ½ teaspoon turmeric powder<br> ½ teaspoon garam masala powder<br> 1 teaspoon cumin powder<br> 1 teaspoon dry mango powder (amchur)<br> 1 teaspoon ajwain (carom seeds)<br> 1 teaspoon chaat masala<br> ½ teaspoon black pepper powder (optional)<br> Kashmiri red chili powder gives a nice red color to the food but is not spicy and hot.<br> Instead of kashmiri red chilli powder, you can add 2 teaspoons of sweet paprika or ½ to 1 teaspoon of cayenne pepper.<br> Add ½ teaspoon black salt and regular salt as per taste. If you do not have black salt, then skip it.<br> Add ½ tablespoon (1.5 teaspoons) lemon juice.<br> Next add 1 tablespoon mustard oil. If you do not have mustard oil, then use a neutral tasting oil.<br> Mix very well. Check the taste and add more seasonings if required.<br> Add the onions, capsicum and paneer to the marinade.
+        <BR> Slowly and gently mix them with the marinade. Cover and keep the marinated paneer and veggies in the refrigerator for 2 hours or more.<br>
+    </p>
+    <p class="white"><strong>Step 1:</strong> Begin to thread the veggies and paneer alternately on bamboo skewers. Before you begin to thread preheat oven at 230 or 240 degrees Celsius or 464 degree Fahrenheit for 15 to 20 minutes.Use only the top heating element while preheating as well as grilling. Soak or rinse the bamboo skewers before threading.<br>
         <strong>Step 2:</strong> Place them on a tray lined with aluminium foil or parchment paper.<br>
         <strong>Step 3:</strong>Brush with some oil all over.<br>
         <strong>Step 4:</strong>Place the tray on the top rack and grill in the preheated oven for 7 to 10 minutes first at 230 to 240 degrees Celsius or 464 degrees Fahrenheit.<br>
         <strong>Step 5:</strong>Then remove the tray from the oven and turn the paneer tikka skewers.<br>
-        <strong>Step 6:</strong>Again keep back on the top rack in the oven and continue to grill till the edges of paneer and veggies are golden or slightly charred for about 3 to 5 minutes.<br>Do not grill for a long time as then paneer becomes hard. Since temperatures vary from oven to oven do keep a check.<br>
+        <strong>Step 6:</strong>Again keep back on the top rack in the oven and continue to grill till the edges of paneer and veggies are golden or slightly charred for about 3 to 5 minutes.<br>Do not grill for a long time as then paneer becomes hard. Since temperatures vary from oven to oven do keep a check.<br> You can reduce or increase the time as required. Total grilling time will be 15 to 20 minutes.<br>
+        <strong>Step 7:</strong>Remove once done. Serve the paneer tikka sprinkled with some chaat masala and lemon juice. Also serve mint chutney, onion slices and lemon wedges as sides.<br>
+    </p>
+    <b class="white">--------------------------------------------------------------------------------------</b>
 
-You can reduce or increase the time as required. Total grilling time will be 15 to 20 minutes.<br>
-         <strong>Step 7:</strong>Remove once done. Serve the paneer tikka sprinkled with some chaat masala and lemon juice. Also serve mint chutney, onion slices and lemon wedges as sides.<br>
-</p>
-<b class="white">--------------------------------------------------------------------------------------</b>
-     
-     
-     <h2 id="oats" align="center" class="recipe">Oats Porridge</h2>
-     
-     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Oatmeal_porridge_1-minute_with_additional_ingredients.jpg" alt="oats porridge" class="center">
-     
-     <ul>
+
+    <h2 id="oats" align="center" class="recipe">Oats Porridge</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Oatmeal_porridge_1-minute_with_additional_ingredients.jpg" alt="oats porridge" class="center">
+    <div class="time-and-ingredients">
+        <ul>
             <li><b>Time:</b> 6 min.</li>
             <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
         </ul>
-     
-     <table>
+
+        <table>
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -189,52 +179,31 @@ You can reduce or increase the time as required. Total grilling time will be 15 
             <tbody>
             </tbody>
         </table>
-     
-     
-     <p><strong>Step 1:</strong>First, add ½ cup quick-cooking oats or rolled oats in a pan.<br>
+    </div>
+<br>
+<br>
+    <p><strong>Step 1:</strong>First, add ½ cup quick-cooking oats or rolled oats in a pan.<br>
         <strong>Step 2:</strong>Add 1 cup of water.<br>
-        <strong>Step 3:</strong>Then add ½ cup milk or as needed. You can also add more water for a dairy-free recipe.<br>
-
-Consistency can be easily adjusted as per your requirements. ½ cup milk gives a slightly thick consistency. For a thinner consistency, you can add more milk or water.<br>
-        <strong>Step 4:</strong>Add sugar as per taste. I just added 2 tablespoons raw sugar or white sugar. Sugar is completely optional. If adding fruits later, then you can skip sugar.<br>
-
-If adding honey, then add when the porridge becomes lukewarm or cools down at room temperature, as honey when heated becomes toxic.<br>
+        <strong>Step 3:</strong>Then add ½ cup milk or as needed. You can also add more water for a dairy-free recipe.<br> Consistency can be easily adjusted as per your requirements. ½ cup milk gives a slightly thick consistency. For a thinner consistency, you can add more milk or water.<br>
+        <strong>Step 4:</strong>Add sugar as per taste. I just added 2 tablespoons raw sugar or white sugar. Sugar is completely optional. If adding fruits later, then you can skip sugar.<br> If adding honey, then add when the porridge becomes lukewarm or cools down at room temperature, as honey when heated becomes toxic.<br>
         <strong>Step 5:</strong>Stir very well as you heat the oats porridge mixture on low to medium heat.<br>
         <strong>Step 6:</strong>Bring the oatmeal porridge to a gentle simmer as you continue to stir frequently.<br>
-         <strong>Step 7:</strong>The porridge will thicken as it cooks. Continue to cook for a total of 5 to 6 minutes (if you have used quick cooking oats) or until it reaches the consistency you like.<br>
+        <strong>Step 7:</strong>The porridge will thicken as it cooks. Continue to cook for a total of 5 to 6 minutes (if you have used quick cooking oats) or until it reaches the consistency you like.<br> For rolled oats, cook for 10 to 12 minutes on low to medium heat. If the consistency is too thick for you add some more water or milk<br>
+        <strong>Step 8:</strong>Turn off heat when the and the oats have softened well and you get the preferred consistency.<br>
+        <br> Serve Oats Porridge hot or warm or at room temperature. Keep in mind that the Oatmeal Porridge will thicken as it cools.<br>
+    </p>
 
-For rolled oats, cook for 10 to 12 minutes on low to medium heat. If the consistency is too thick for you add some more water or milk<br>
-<strong>Step 8:</strong>Turn off heat when the and the oats have softened well and you get the preferred consistency.<br>
-<br>
 
-Serve Oats Porridge hot or warm or at room temperature. Keep in mind that the Oatmeal Porridge will thicken as it cools.<br>
-</p>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
+
+
+
+
+
+
+
+
     <p class="white"><em>Source: <a href="https://www.vegrecipesofindia.com/">Some recipes websites</a></em></p>
-    
-    </body>
+
+</body>
+
 </html>
