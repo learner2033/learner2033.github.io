@@ -6,20 +6,15 @@
     <meta charset="utf-8">
     <style>
         body {
-            background-image:url("https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg?w=996&t=st=1682332447~exp=1682333047~hmac=f0d859d2b89d939b8c7316ae7827fdd589f4315fad56aea6b6d4b804df4c532c");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
+            background-color: gray;
+
         }
 
         .center {
-            width: 250px;
-            float:left;
-            margin-left:px;
-            margin-right:18px;
-            margin-bottom:15px;
-            margin-top: 10px;
-
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
 
         .white {
@@ -27,22 +22,60 @@
         }
 
         #book {
-            background-color: rgb(224, 198, 137);
+            background-color: white;
+            border: 3px solid ;
             border-radius: 50px;
             padding: 20px;
         }
 
         .recipe {
-            background-image: linear-gradient(to bottom right, rgb(172, 92, 237), rgb(59, 173, 150));
+             background-color: white;
+            border: 2px solid ;
             border-radius: 50px;
-            max-width: 750px;
-            margin: auto;
+
+
+
         }
-        .time-and-ingredients{
-            float:none;
+
+        table,
+        th,
+        td {
+            border: 2px solid #ddd;
+            border-collapse: collapse;
+            text-align: left;
         }
-        .steps{
-            float:;
+
+        th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            background-color: grey;
+            color: white;
+        }
+
+        .ingredients {
+            width: 100%;
+        }
+
+        .ingredients tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        .ingredients tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        td {
+            padding-left: 5px;
+        }
+
+        .ingredients tr:hover {
+            background-color: #9d9d9d;
+        }
+
+        .steps {
+            border: 2px double;
+            padding: 10px;
         }
     </style>
 </head>
@@ -61,35 +94,34 @@
 
     <h2 id="paratha" align="center" class="recipe">Classic Aloo Paratha</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Aloo_Paratha1.jpg" alt="aloo paratha" class="center">
-    <div class="time-and-ingredients">
-        <ul>
-            <li><b>Time:</b> 50 min.</li>
-            <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
-        </ul>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
+    <ul>
+        <li><b>Time:</b> 50 min.</li>
+        <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
+    </ul>
+
+    <table class="ingredients">
+        <thead>
             <tr>
-                <td>Dough made from<br> whole wheat flour</td>
-                <td>500 gm</td>
+                <th>Ingredients</th>
+                <th>Quantity</th>
             </tr>
-            <tr>
-                <td>Mashed potato stuffing</td>
-                <td>4 medium-sized <br>potatoes</td>
-            </tr>
-            <tr>
-                <td>Chopped green chillies</td>
-                <td>4 medium-sized <br>potatoes</td>
-            </tr>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+        </thead>
+        <tr>
+            <td>Dough made from<br> whole wheat flour</td>
+            <td>500 gm</td>
+        </tr>
+        <tr>
+            <td>Mashed potato stuffing</td>
+            <td>4 medium-sized <br>potatoes</td>
+        </tr>
+        <tr>
+            <td>Chopped green chillies</td>
+            <td>4 medium-sized <br>potatoes</td>
+        </tr>
+        <tbody>
+        </tbody>
+    </table>
 
     <p class="steps"><strong>Step 1:</strong> Pinch two small balls from the dough. Flatten them and dust with whole wheat flour.<br>
         <strong>Step 2:</strong>With a rolling pin, roll them into rounds roughly 4 to 5 inches in diameter. Try making both the discs the same size.<br>
@@ -104,43 +136,44 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Paneer_Tikka_Masala.jpg" alt="paneer tikka" class="center">
 
 
-    <div class="time-and-ingredients">
-        <ul>
-            <li><b>Time:</b> 2 hrs.</li>
-            <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
-        </ul>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
+    <ul>
+        <li><b>Time:</b> 2 hrs.</li>
+        <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
+    </ul>
+
+    <table class="ingredients">
+        <thead>
             <tr>
-                <td>Paneer (Indian Cottage Cheese)</td>
-                <td>250 gm</td>
+                <th>Ingredients</th>
+                <th>Quantity</th>
             </tr>
-            <tr>
-                <td>Marinade</td>
-                <td>200 gm</td>
-            </tr>
-            <tr>
-                <td>Veggies</td>
-                <td>-</td>
-            </tr>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+        </thead>
+        <tr>
+            <td>Paneer (Indian Cottage Cheese)</td>
+            <td>250 gm</td>
+        </tr>
+        <tr>
+            <td>Marinade</td>
+            <td>200 gm</td>
+        </tr>
+        <tr>
+            <td>Veggies</td>
+            <td>-</td>
+        </tr>
+        <tbody>
+        </tbody>
+    </table>
+
     <h4>Prep Work:</h4>
-    <p class="white">
+
+    <p class="steps">
         Peel, rinse and dice 1 medium-sized onion in square shaped 1 to 1.5 inches pieces. Rinse and slice 1 small to medium sized capsicum (green bell pepper) in 1 to 1.5 inches pieces.You will need ½ cup each of onions and capsicum. Set these aside. You can also use tomatoes if you want.Crush 1.5 inches ginger and 6 to 7 small to medium sized garlic to a fine paste in a mortar-pestle. You will need 1 tablespoon of crushed ginger-garlic or 1 tablespoon of ready ginger-garlic paste.Slice 200 to 250 grams block or paneer into cubes or squares and keep aside. Best is to use homemade paneer.<br>
     </p>
-    <p class="white"><strong>Make Tikka Marinade:</strong><br> Put 200 grams hung curd (greek yogurt) in a bowl. With a whisk beat the curd lightly till smooth.<br> Now add 1 tablespoons ginger garlic paste or 1 tablespoon crushed ginger garlic to the curd. Also add all the dry spice powders. Below you see the following Indian spice powders in clockwise order:<br> 2 teaspoons kashmiri red chili powder<br> 1 teaspoon coriander powder<br> ½ teaspoon turmeric powder<br> ½ teaspoon garam masala powder<br> 1 teaspoon cumin powder<br> 1 teaspoon dry mango powder (amchur)<br> 1 teaspoon ajwain (carom seeds)<br> 1 teaspoon chaat masala<br> ½ teaspoon black pepper powder (optional)<br> Kashmiri red chili powder gives a nice red color to the food but is not spicy and hot.<br> Instead of kashmiri red chilli powder, you can add 2 teaspoons of sweet paprika or ½ to 1 teaspoon of cayenne pepper.<br> Add ½ teaspoon black salt and regular salt as per taste. If you do not have black salt, then skip it.<br> Add ½ tablespoon (1.5 teaspoons) lemon juice.<br> Next add 1 tablespoon mustard oil. If you do not have mustard oil, then use a neutral tasting oil.<br> Mix very well. Check the taste and add more seasonings if required.<br> Add the onions, capsicum and paneer to the marinade.
+    <p class="steps"><strong>Make Tikka Marinade:</strong><br> Put 200 grams hung curd (greek yogurt) in a bowl. With a whisk beat the curd lightly till smooth.<br> Now add 1 tablespoons ginger garlic paste or 1 tablespoon crushed ginger garlic to the curd. Also add all the dry spice powders. Below you see the following Indian spice powders in clockwise order:<br> 2 teaspoons kashmiri red chili powder<br> 1 teaspoon coriander powder<br> ½ teaspoon turmeric powder<br> ½ teaspoon garam masala powder<br> 1 teaspoon cumin powder<br> 1 teaspoon dry mango powder (amchur)<br> 1 teaspoon ajwain (carom seeds)<br> 1 teaspoon chaat masala<br> ½ teaspoon black pepper powder (optional)<br> Kashmiri red chili powder gives a nice red color to the food but is not spicy and hot.<br> Instead of kashmiri red chilli powder, you can add 2 teaspoons of sweet paprika or ½ to 1 teaspoon of cayenne pepper.<br> Add ½ teaspoon black salt and regular salt as per taste. If you do not have black salt, then skip it.<br> Add ½ tablespoon (1.5 teaspoons) lemon juice.<br> Next add 1 tablespoon mustard oil. If you do not have mustard oil, then use a neutral tasting oil.<br> Mix very well. Check the taste and add more seasonings if required.<br> Add the onions, capsicum and paneer to the marinade.
         <BR> Slowly and gently mix them with the marinade. Cover and keep the marinated paneer and veggies in the refrigerator for 2 hours or more.<br>
     </p>
-    <p class="white"><strong>Step 1:</strong> Begin to thread the veggies and paneer alternately on bamboo skewers. Before you begin to thread preheat oven at 230 or 240 degrees Celsius or 464 degree Fahrenheit for 15 to 20 minutes.Use only the top heating element while preheating as well as grilling. Soak or rinse the bamboo skewers before threading.<br>
+    <p class="steps"><strong>Step 1:</strong> Begin to thread the veggies and paneer alternately on bamboo skewers. Before you begin to thread preheat oven at 230 or 240 degrees Celsius or 464 degree Fahrenheit for 15 to 20 minutes.Use only the top heating element while preheating as well as grilling. Soak or rinse the bamboo skewers before threading.<br>
         <strong>Step 2:</strong> Place them on a tray lined with aluminium foil or parchment paper.<br>
         <strong>Step 3:</strong>Brush with some oil all over.<br>
         <strong>Step 4:</strong>Place the tray on the top rack and grill in the preheated oven for 7 to 10 minutes first at 230 to 240 degrees Celsius or 464 degrees Fahrenheit.<br>
@@ -154,38 +187,37 @@
     <h2 id="oats" align="center" class="recipe">Oats Porridge</h2>
 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Oatmeal_porridge_1-minute_with_additional_ingredients.jpg" alt="oats porridge" class="center">
-    <div class="time-and-ingredients">
-        <ul>
-            <li><b>Time:</b> 6 min.</li>
-            <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
-        </ul>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
+    <ul>
+        <li><b>Time:</b> 6 min.</li>
+        <li><b>Serves:</b> Depends on quantity of Ingredients used.</li>
+    </ul>
+
+    <table class="ingredients">
+        <thead>
             <tr>
-                <td>Oats</td>
-                <td>½ Cup</td>
+                <th>Ingredients</th>
+                <th>Quantity</th>
             </tr>
-            <tr>
-                <td>Milk</td>
-                <td>½ Cup</td>
-            </tr>
-            <tr>
-                <td>Water</td>
-                <td>1 Cup</td>
-            </tr>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-<br>
-<br>
-    <p><strong>Step 1:</strong>First, add ½ cup quick-cooking oats or rolled oats in a pan.<br>
+        </thead>
+        <tr>
+            <td>Oats</td>
+            <td>½ Cup</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>½ Cup</td>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td>1 Cup</td>
+        </tr>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <p class="steps"><strong>Step 1:</strong>First, add ½ cup quick-cooking oats or rolled oats in a pan.<br>
         <strong>Step 2:</strong>Add 1 cup of water.<br>
         <strong>Step 3:</strong>Then add ½ cup milk or as needed. You can also add more water for a dairy-free recipe.<br> Consistency can be easily adjusted as per your requirements. ½ cup milk gives a slightly thick consistency. For a thinner consistency, you can add more milk or water.<br>
         <strong>Step 4:</strong>Add sugar as per taste. I just added 2 tablespoons raw sugar or white sugar. Sugar is completely optional. If adding fruits later, then you can skip sugar.<br> If adding honey, then add when the porridge becomes lukewarm or cools down at room temperature, as honey when heated becomes toxic.<br>
@@ -205,7 +237,7 @@
 
 
 
-    <p class="white"><em>Source: <a href="https://www.vegrecipesofindia.com/">Some recipes websites</a></em></p>
+    <em>Source: <a href="https://www.vegrecipesofindia.com/" class="recipe-link-website">Some recipes websites</a></em>
 
 </body>
 
