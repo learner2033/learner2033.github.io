@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Spin-off of "Project: Event invite"</title>
+    <link href='https://fonts.googleapis.com/css?family=Allura|Carattere' rel='stylesheet'>
+    <style>
+        body {
+            background-image: url("https://png.pngtree.com/background/20211217/original/pngtree-golden-green-mandala-art-background-with-border-invitation-card-wedding-islamic-picture-image_1597514.jpg");
+            background-position: center;
+            text-align: center;
+            margin: auto;
+        }
+
+        .bride-groom,
+        #place-and-time,
+        #reception,
+        #RSVP,
+        .rsvp-only {
+            color: white;
+        }
+
+        #card-content {
+            position: absolute;
+            text-align: center;
+
+        }
+
+
+        #names {
+            line-height: 20px;
+        }
+
+        .parents {
+            font-family: Carattere;
+            font-size: 25px;
+            font-weight: bold;
+            color: #e2725b;
+
+        }
+
+        .bride-groom {
+            font-family: allura;
+            font-size: 10vw;
+            text-shadow: 2px 2px 5px pink;
+
+
+        }
+
+        h3,
+        #place-and-time {
+            font-family: "Times New Roman", georgia, serif;
+            color: #30d5c8;
+        }
+
+        h3 {
+            color: grey;
+        }
+
+        #reception {
+            font-family: Carattere;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #RSVP {
+            font-family: "Times New Roman", georgia, serif;
+            color: #fffaca;
+        }
+
+        .rsvp-only {
+            font-size: 40px;
+            color: #fffaca;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="parents"> Mrs. Olivia Garcia and Mr. David Mitchell request your graciuos presence on the wedding ceremony of their son
+
+        <div id="names">
+            <h1 class="bride-groom"> Oliver Mitchell</h1>
+            <h3>WITH</h3>
+            <h1 class="bride-groom">Isabella Martinez</h1>
+            <p class="parents"> daughter of Mr and Mrs. Lucas Martinez</p>
+        </div>
+
+        <p id="place-and-time">
+            SATURDAY, SEPTEMBER 16TH, 2023<br> 7 O’CLOCK IN THE EVENING<br> MAJESTIC BALLROOM<br> 1152 DARK STAR LANE<br> SAN DIEGO, CA
+        </p>
+        <p id="reception">
+            Reception to follow
+        </p>
+        <p id="RSVP">
+            <span class="rsvp-only">KINDLY RSVP</span><br> BY THE EIGHT OF AUGUST
+        </p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
